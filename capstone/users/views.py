@@ -9,6 +9,7 @@ def home(request):
     return render(request, 'user/home.html')
 
 def register(request):
+    """This function will check if a user has a valid account or not and will trigger an account creation form"""
     if request.method == 'POST':
         form = UserRegistrationForm(request.POST)
         if form.is_valid():
