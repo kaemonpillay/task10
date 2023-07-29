@@ -5,6 +5,7 @@ from .forms import UserRegistrationForm
 
 # Create your views here.
 def home(request):
+    """Defines the html request that will be triggered when a user gets to the home page"""
     return render(request, 'user/home.html')
 
 def register(request):
